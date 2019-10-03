@@ -1,0 +1,11 @@
+<p>
+  Author: {{quote.author}}<br>
+  Uploaded by: {{quote.uploaded}}<br>
+  Published on: {{quote.publishedDate|date|uppercase}}<br>
+  Upvotes: {{quote.upvote}}   Downvotes: {{quote.downvote}}
+</p>
+<button class="cbtn btn btn-success" (click)="like()">Like 
+  </button>
+  <button class="cbtn btn btn-outline-warning" (click)="dislike()"> Dislike 
+  </button>
+<button (click)= 'quoteDelete(true)'class="btn btn-outline-danger">Delete Quote</button>

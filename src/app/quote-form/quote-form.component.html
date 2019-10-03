@@ -1,0 +1,29 @@
+<div id="form" class="container">
+  <h2 class="text-center">Add a new Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote()'>
+      <div class="form-group">
+
+          <label for="name">Quote</label>
+          <textarea class="form-control" id="description" rows="4" required></textarea>
+          
+
+      </div>
+      <div class="form-group">
+
+          <label for="author">Author</label>
+          <input type="text" required class="form-control" id="author"><br>
+          <label for="uploaded">Uploaded by</label>
+          <input type="text" required class="form-control" id="uploaded">
+
+      </div>
+      <div class="form-group">
+              <label for="complete">Date of submission</label>
+              <input type='date' id="complete" required>
+          </div>
+          <!-- <div class="col-md-6">
+                  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+             </div> -->
+          <button type="submit" class="btn btn-success">Add Quote</button>
+  </form>
+</div>
